@@ -21,7 +21,6 @@ public class Main {
                 minBil.getPrice() + "kr, " +
                 minBil.getColor() + ", " +
                 minBil.getBuildYear());
-
         System.out.println("Vill du simulera bilen? Välj 1 om du vill fortsätta eller 2 om du vill avbryta");
         boolean isWrongAnswer;
         do {
