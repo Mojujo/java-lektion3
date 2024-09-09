@@ -1,7 +1,6 @@
 package se.oscar.oopBil;
 
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -24,9 +23,9 @@ public class Main {
                 minBil.getBuildYear());
 
         System.out.println("Vill du simulera bilen? Välj 1 om du vill fortsätta eller 2 om du vill avbryta");
-        AtomicBoolean isWrongAnswer = new AtomicBoolean(false);
+        boolean isWrongAnswer;
         do {
-            isWrongAnswer.set(false);
+            isWrongAnswer = false;
             switch(scan.nextInt()) {
                 case 1:
                     minBil.start();
@@ -36,8 +35,8 @@ public class Main {
                     break;
                 default:
                     System.out.println("Välj 1 om du vill fortsätte, 2 om du vill avbryta.");
-                    isWrongAnswer.set(true);
+                    isWrongAnswer = true;
             }
-        } while(isWrongAnswer.get());
+        } while(isWrongAnswer);
     }
 }
