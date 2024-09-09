@@ -33,7 +33,6 @@ public class Bil {
             accelerate(5);
             System.out.println("Din hastighet är: " + speed + "km/h");
             Thread.sleep(500);
-
             if (speed > 100) {
                 stop();
             }
