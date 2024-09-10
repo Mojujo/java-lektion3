@@ -8,12 +8,8 @@ public class Bil {
     private int speed;
     boolean start = true;
 
-    public Bil(String model, int price, String color, int buildYear, int speed) {
-        this.model = model;
-        this.price = price;
-        this.color = color;
-        this.buildYear = buildYear;
-        this.speed = speed;
+    public Bil() {
+        this.speed = 0;
     }
 
     public String getModel() { return model; }

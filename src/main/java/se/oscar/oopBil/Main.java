@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Scanner scan = new Scanner(System.in);
-        Bil minBil = new Bil("Toyota", 350000, "Blue", 2004, 0);
+        Bil minBil = new Bil();
 
         System.out.println("Välkommen till racing simulatorn! Vilken model vill du prova?");
         minBil.setModel(scan.next());
